@@ -2,7 +2,7 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-image: url(kbg.png);
+  background-image: url(img/kbg.png);
   background-repeat: repeat;
   overflow-x: hidden;
 }
@@ -43,8 +43,8 @@ padding-left: 50px;
   color: #830f08;
 }
 
-ul {
-    list-style-image: url('kicon.png');
+ul.kinoko {
+    list-style-image: url('img/kicon.png');
 }
 
 .inner {
@@ -78,25 +78,26 @@ img {
   display: block;
 }
 
-#countstep {
-    position: relative;
-}
 
-#countstep li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    position: absolute;
-    top: 0;
-}
-
-#countstep li, #countstep a {
-    height: 75px;
-    display: block;
-}
-
-#ichi {
+li.ichi {
     left: 0px;
     width: 76px;
-    background: url('img/count.png') 0 0;
+    height: 76px;
+    display: inline-block;
+    list-style: none;
+    position: absolute;
+    background: url('img/count.png') no-repeat;
+}
+
+.countstep:after {
+  content: "";
+  position: absolute;
+  background-image: url(http://i.stack.imgur.com/pxuWK.png);
+  background-position: -120px 0;
+  width: 76 px;
+  height: 76px;
+  left: 50%;
+  margin-left: -20px;
+  top: 50%;
+  margin-top: -20px;
 }
