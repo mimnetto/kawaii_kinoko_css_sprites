@@ -83,21 +83,43 @@ li.ichi {
     left: 0px;
     width: 76px;
     height: 76px;
-    display: inline-block;
+    display: block;
     list-style: none;
-    position: absolute;
+    position: relative;
     background: url('img/count.png') no-repeat;
 }
 
-.countstep:after {
-  content: "";
-  position: absolute;
-  background-image: url(http://i.stack.imgur.com/pxuWK.png);
-  background-position: -120px 0;
-  width: 76 px;
-  height: 76px;
-  left: 50%;
-  margin-left: -20px;
-  top: 50%;
-  margin-top: -20px;
+
+h2.countstep {
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+}
+
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
