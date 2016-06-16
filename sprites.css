@@ -1,0 +1,102 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-image: url(kbg.png);
+  background-repeat: repeat;
+  overflow-x: hidden;
+}
+#wrapper {
+  min-height: 100%;
+  position: relative;
+}
+#header {
+  background: #ededed;
+  padding: 10px;
+}
+#content {
+  padding-bottom: 100px;
+  /* Height of the footer element */
+}
+#content h2 {
+color: #830f08;
+font-family: Arial, Helvetica, sans-serif;
+}
+#content p {
+font-family: Arial, Helvetica, sans-serif;
+padding-left: 50px;
+}
+
+
+#footer {
+  background: #81aef8;
+  width: 100%;
+  height: 100px;
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#footer p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #830f08;
+}
+
+ul {
+    list-style-image: url('kicon.png');
+}
+
+.inner {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
+  border-style: solid;
+  border-color: #830f08;
+  border-width: 5px;
+  border-radius: 30px;
+  margin-top: 0;
+  background-color: #fff;
+  height: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  max-width: 100%;
+  width: auto;
+}
+
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+#countstep {
+    position: relative;
+}
+
+#countstep li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 0;
+}
+
+#countstep li, #countstep a {
+    height: 75px;
+    display: block;
+}
+
+#ichi {
+    left: 0px;
+    width: 76px;
+    background: url('img/count.png') 0 0;
+}
